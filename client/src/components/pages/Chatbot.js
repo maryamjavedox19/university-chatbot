@@ -17,7 +17,7 @@ const Chatbot = () => {
 
   const handleSendMessage = async () => {
     if (inputText) {
-      const newMessage = { text: inputText, isuser: true };
+      const newMessage = { text: inputText, isUser: true };
 
       setMessages((prevMessages) => [newMessage, ...prevMessages]);
 
