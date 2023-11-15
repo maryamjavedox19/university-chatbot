@@ -1,10 +1,14 @@
 import React from "react";
 import Slider from "../inc/Slider";
 import Footer from "./Footer";
+import Chatbot from "./Chatbot";
+
 
 export default function Home() {
   return (
     <div>
+      <Chatbot></Chatbot>
+
       <Slider />
       <section className="section">
         <div className="container">
@@ -15,7 +19,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="container">
           <div className="row ">
             <div className="col-md-12 text-center">
@@ -114,7 +118,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </section>
     </div>

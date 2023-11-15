@@ -5,6 +5,10 @@ const Chatbot = () => {
   const [isChatbotVisible, setIsChatbotVisible] = useState(false);
   const [inputText, setInputText] = useState("");
   const [messages, setMessages] = useState([]);
+  const [isTyping, setIsTyping] = useState(false);
+
+
+
   const inputRef = useRef(null);
 
   const toggleChatbot = () => {
@@ -53,20 +57,15 @@ const Chatbot = () => {
     <>
       <ChatbotButton>
         <button onClick={toggleChatbot}>
-          <img src="../images/chatbox-icon.svg" alt="Chatbox" />
+          <img src="https://s01.live2support.com/ls3/images/1611305853.png" alt="Chatbox" />
         </button>
       </ChatbotButton>
 
       {isChatbotVisible && (
         <ChatbotContainer>
           <ChatboxHeader>
-            {/* <Part1>
-              {/* <img src="../images/chatbotimg.png" alt="image" /> */}
-            {/* </Part1> */}
-            {/* <Part2> */}
             <h4>Chat support</h4>
-            <p>Hi. My name is Christ. How can I help you?</p>
-            {/* </Part2> */}
+            <p>Hi, I'm NEDbot. How can I help you?</p>
           </ChatboxHeader>
           <ChatboxMessages>
             {messages.map((message, index) => (
@@ -97,7 +96,7 @@ const Chatbot = () => {
 
 const ChatbotContainer = styled.div`
   position: fixed;
-  bottom: 40px;
+  bottom: 62px;
   right: 30px;
   width: 340px;
   height: 75%;
@@ -113,9 +112,14 @@ const ChatbotContainer = styled.div`
 `;
 
 const ChatbotButton = styled.div`
-  position: absolute;
-  bottom: 0rem;
+  position: fixed;
+  bottom: 1rem;
   right: 2rem;
+  
+  img{
+    width:3rem;
+    height:3rem;
+  }
 `;
 
 const ChatboxHeader = styled.div`
