@@ -3,8 +3,6 @@ from flask_cors import CORS
 import json
 #from gevent.pywsgi import WSGIServer
 
-
-
 import nltk
 nltk.download('popular')
 from nltk.stem import WordNetLemmatizer
@@ -12,7 +10,7 @@ lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
 from keras.models import load_model
-model = load_model(r'chatbotmodel.h5')
+model = load_model('chatbotmodel.h5')
 import json
 import random
 intents = json.loads(open('intents.json').read())
