@@ -1,91 +1,309 @@
-{"intents": [
-  {"tag": "greetings",
-  "patterns": ["hello","hey","hi","good day","Greetings","what's up?","how is it going?"],
-  "responses": ["Hello!","Hey!","What can I do for you?"]
-  },
-
-  {"tag": "name",
-  "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
-  "responses": ["You can call me Ribot","I'm Ribot","I'm Ribot your virtual assistant"]
-  },
-
-  {"tag": "courses",
-  "patterns": ["what courses are available", "how many courses are there in this college"],
-  "responses": ["Informatics College Pokhara has been in direct partnership with London Metropolitan University, \nUK to provide enviable higher education in IT and Business to students in Pokhara.\nFor Bachelors Degree in Information Technology we have been offering the specialization in BSc (Hons) Computing.\nFor Bachelors in Business Administration we have been offering the followings:\n\n1. BBA (Marketing) with International Business \n\n2. BBA (Accounting & Finance) with International Business\n\n3. BBA (International Business)"]
-  },
-
-   {"tag": "courseDuration",
-  "patterns": ["how long will be BIT or BBA course", "how long will it take to complete BIT or BBA course"],
-  "responses": ["Our college offers 3 year long BIT course and 3 and half year long BBA course."]
-  },
-
-   {"tag": "Location",
-  "patterns": ["location","where is it located","what is the location of the college"],
-  "responses": ["Informatics College Pokhara is located in Matepani-12, pokhara near Gandaki Hospital."]
-  },
-
-  {"tag": "semesters",
-  "patterns": ["how many semesters are there in a year","how many semesters one should study in a year"],
-  "responses": ["There are two semesters in a year."]
-  },
-
-  {"tag": "semDuration",
-  "patterns": ["how many months are there in a semester","how long will be a single semester"],
-  "responses": ["The single semester will be around 4 months."]
-  },
-
-  {"tag": "studentRequirements",
-  "patterns": ["what are the student requirements for admission","entry requirements","admission requirements"],
-  "responses": ["Academic Level\nNEB +2 overall aggregate of 2.2 CGPA (55%) or above with each subject (theory and practical) grade D+ or above, and SEE Mathematics score of C+ ( 50%) or above.\nFor A-Levels, a minimum of 3.5 credits and atleast a grade of D and above.\n\nEnglish Proficiency\nEnglish NEB XII Marks greater or equals to 60% or 2.4 GPA\nFor Level 4 or Year 1 BIT\nPass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 80.\nFor Level 4 or Year 1 BBA\nPass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 96."]
-  },
-
-  {"tag": "classes",
-  "patterns": ["how many classes will be there in a day","how long are the classes?"],
-  "responses": ["There may be two or three classes per day. Each class will be of 1 hour and 30 minutes."]
-  },
-
-  {"tag": "teachingStyle",
-  "patterns": ["what is the teaching style of this college?","Is the teaching pattern different from other college?","what is the teaching format?"],
-  "responses": ["Our college has different teaching patterns than other colleges of Nepal. We adopt a British teaching methodology, following the LTW techniques which stands for Lecture, Tutorial and Workshop.\nYou can provide us with your contact details and our counselors shall reach out to you and provide you with further details."]
-  },
-
-  {"tag": "exams",
-  "patterns": ["what are the exams like?","What is the exam pattern"],
-  "responses": ["There are assignments which carry more weight than your written exams. The assignments have deadlines which you should not exceed if you want to get better marks."]
-  },
-
-  {"tag": "hours",
-  "patterns": ["what are your hours","when are you guys open","what your hours of operation"],
-  "responses": ["You can message us here at any hours. But our college premises will be open from 7:00 am to 5:00 pm only."]
-  },
-
-  {"tag": "funActivities",
-  "patterns": ["will there be any extra curriculum activities?","does the college conducts any fun program"],
-  "responses": ["Yes, Of course. Our college not only provides excellent education but also encourage students to take part in different curriculum activities. The college conducts yearly programs like Sports meet, Carnival, Holi festival, and Christmas. \n Also our college has basketball court, badminton court, table tennis, chess, carrom board and many more refreshment zones."]
-  },
-
-  {"tag": "facilities",
-  "patterns": ["what facilities are provided by the college?","what are the facilities of college for students", "what are the college infrastructures "],
-  "responses": ["With excellent education facilities, Our College provides various other facilities like 24 hours internet, library, classes with AC, discusson room, canteen, parking space, and student service for any students queries."]
-  },
-
-  {"tag": "fee",
-  "patterns": ["how much is the college fee","what is the fee structure"],
-  "responses": ["Course BIT\nAdmission fee=RS 96,000\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 334,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 69,000 Total fee= RS 238,000\nGrandTotal fee= RS 810,000\n\nCourse BBA\nAdmission fee=RS 96,000\nYear 1\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 300,000\nYear 2\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 3\nUniversity and Exam fee= RS 100,000 Each semester fee=RS 52,000 Total fee= RS 204,000\nYear 4\nUniversity and Exam fee= RS 50,000 Semester fee=RS 52,000 Total fee= RS 102,000\nGrandTotal fee= RS 810,000"]
-  },
-
-  {"tag": "goodbye",
-  "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
-  "responses": ["Sad to see you go :(","Talk you later","Goodbye"]
-  },
-
-  {"tag": "invalid",
-    "patterns": ["","gvsd","asbhk"],
-    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
-  },
-
-  {"tag": "thanks",
-    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-    "responses": ["Happy to help!", "Any time!", "My pleasure"]
-  }
-]}
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "Greetings",
+        "what's up?",
+        "how is it going?"
+      ],
+      "responses": [
+        "Hello!",
+        "Hey!",
+        "What can I do for you?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "name",
+        "what's your name",
+        "who are you",
+        "what should I call you"
+      ],
+      "responses": [
+        "Hey! I'm NEDoBot your virtual assistant"
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "when are the admissions going to start",
+        "admission",
+        "application deadline"
+      ],
+      "responses": [
+        "The admissions are closed.\nThe last date for admission in the MS program is 17 September 2023"
+      ]
+    },
+    {
+      "tag": "thesis",
+      "patterns": [
+        "when are the admissions going to start",
+        "admission",
+        "application deadline"
+      ],
+      "responses": [
+        "1 Proposal for Thesis\n(i) During the first 4 weeks of the first semester of Thesis enrolment, a proposal on prescribed format should be submitted by the student to the concerned Department through the Supervisor.\n(ii) The Thesis proposal is to be evaluated by a Postgraduate Committee comprising of three senior faculty members including Chairperson.This Committee is to be constituted by concerned Dean.\n(iii) The proposal would then be submitted to the concerned Board of Studies for approval."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "what courses are available",
+        "how many courses are there in this college"
+      ],
+      "responses": [
+        "NED University of Engineering and Technology provides admission in varoius fields.,\n Postgraduate Programs in our university are in following categories. \n\n1 .Masters in Engineering (M.Engg). \n\n2.Masters in Science( M.Sc). \n\n3. Masters of Engeneering Management. \nFor Bachelors Degree in Information Technology we have been offering the specialization in BSc (Hons) Computing.\nFor Bachelors in Business Administration we have been offering the followings:\n\n1. BBA (Marketing) with International Business \n\n2. BBA (Accounting & Finance) with International Business\n\n3. BBA (International Business)"
+      ]
+    },
+    {
+      "tag": "M Eng",
+      "patterns": [
+        "What fields of specialization are there in M eng.",
+        "M eng",
+        "courses in m eng",
+        "M.Eng"
+      ],
+      "responses": [
+        "MS Engineering offers various fields of speacialization: \n1. Biomedical Engineering \n2.Automotive Engineering \n3.Civil Engineering \n4.Chemical Engineering \n5.Computer Systems Engineering \n6.Electrical Engineering \n7.Earthquake Engineering \n8. Mechanical Engineering. \nFor more information please refer to the website admission page."
+      ]
+    },
+    {
+      "tag": "MS ",
+      "patterns": [
+        "What fields of specialization are there in MS programs.",
+        "MS",
+        "courses in MS"
+      ],
+      "responses": [
+        "MS offers various fields of speacialization: \n1. Chemistry\n2.Computer Science & Information Technology \n3. Textile Sciences \n4.English Linguistics \n5.Mathematics \n6.Physics \n7.Earthquake Engineering \n8. Computer & Information Systems Engineering. \nFor more information please refer to the website admission page."
+      ]
+    },
+    {
+      "tag": "MEM ",
+      "patterns": [
+        "What fields of specialization are there in MEM programs.",
+        "MEM",
+        "courses in MEM"
+      ],
+      "responses": [
+        "MEM offers various fields of speacialization: \n1. Civil Engineering \n2. Electrical Engineering \n3. Textile Engineering \n4.Mechanical Engineering \n5.Urban & Infrastructure Engineering \n6.Physics \n7.Earthquake Engineering \n8. Chemical Engineering. \nFor more information please refer to the website admission page."
+      ]
+    },
+    {
+      "tag": "courseDuration",
+      "patterns": [
+        "how long will MEM or MS program be",
+        "how long will it take to complete masters"
+      ],
+      "responses": [
+        "Our college offers minimum 3 semester course. It may take 1.5 - 2 years."
+      ]
+    },
+    {
+      "tag": "Location",
+      "patterns": [
+        "location",
+        "where is it located",
+        "what is the location of the college"
+      ],
+      "responses": [
+        "Main Campus: \n\nNED University of Engineering & Technology\nUniversity Road, Karachi - 75270, Pakistan",
+        "TIEST - Constituted College of NED:    \n\nThar Institute of Engineering, Sciences & Technology (TIEST), Police Road, Mithi, Tharparkar- 69230, Pakistan.",
+        "City Campus:    \n\nNED University City Campus\nMaulana Din Muhammad Wafai Road, Karachi-74200"
+      ]
+    },
+    {
+      "tag": "semesters",
+      "patterns": [
+        "how many semesters are there in a year",
+        "how many semesters one should study in a year"
+      ],
+      "responses": [
+        "There are minimum 3 semesters and maximum 8 semesters including semester freeze if any during your postgraduate program."
+      ]
+    },
+    {
+      "tag": "semesterclasses",
+      "patterns": [
+        "how many classes are held per week",
+        "do you offer weekend classes."
+      ],
+      "responses": [
+        "Depending on the courses,some classes are held on weekends.\nMinimum Duration of the Programme is Three (3) Semesters.\n Each semester shall have at least Fifteen weeks instruction time followed by semester examinations.\nFor further details, please contact the concerned Department"
+      ]
+    },
+    {
+      "tag": "Eligibility",
+      "patterns": [
+        "what are the student requirements for admission",
+        "entry requirements",
+        "eligibility",
+        "admission requirement"
+      ],
+      "responses": [
+        "Academic Level\nThe applicant must have passed their Qualifying Examinations Bachelor of Engineering Degree\nexamination in the relevant Engineering Discipline from NED University or an equivalent recognized\nInstitution with First Division (for Annual System) or at least with CGPA 2.40 / 4.0 (for Semester System).\nAll Professional Bachelors Degree must be accredited by respective Accreditation bodies e.g. Pakistan\nEngineering Council (PEC) and Pakistan Council of Architects & Town Planners (PCATP).\nAll Professional Bachelors Degree must be accredited by respective Accreditation bodies e.g. Pakistan\nEngineering Council (PEC) and Pakistan Council of Architects & Town Planners (PCATP)"
+      ]
+    },
+    {
+      "tag": "classes",
+      "patterns": [
+        "how many classes will be there in a day",
+        "how long are the classes?"
+      ],
+      "responses": [
+        "i) Each semester shall have at least Fifteen weeks instruction time followed by semester examinations.\nii) In the Day / Weekend programme, courses up\nto maximum of twelve credit hours and in the\nEvening programme courses up to maximum of\nsix credit hours shall be allowed in each\nsemester. However, the Chairperson of the\nconcerned department may allow one\nadditional course to any such student who is\nenrolling for three credit hours of Thesis in a\nSemester or otherwise might require one more\nsemester to complete thirty credit hours\nrequirementforthe degree.\n"
+      ]
+    },
+    {
+      "tag": "mediumofinstruction",
+      "patterns": [
+        "what is the teaching style of this college?",
+        "mode of teaching",
+        "what is the teaching format?"
+      ],
+      "responses": [
+        "Instructions in all classes and laboratories and all\nexaminations written or oral shall be carried out in the\nEnglish language..\nYou can provide us with your contact details and our counselors shall reach out to you and provide you with further details."
+      ]
+    },
+    {
+      "tag": "Labs",
+      "patterns": [
+        "what are your hours",
+        "when are you guys open",
+        "what your hours of operation"
+      ],
+      "responses": [
+        "For the commercialization of the laboratory facilities available within NED University, ORIC has launched a Lab Commercialization Program. Under this program ORIC is closely working research labs across the university such as High-Performance Computing Center, Research Center for artificial Intelligence RCAI, 3D Printing Facility Lab. ORIC has also recently commercialized Scanning Electron Microscope for service provision to industry and students for research purposes.\n1) National Center for Artificial Intelligence (NCAI)\n2) National Center for Robotics and Automation (NCRA)\n3) National Center for Cyber Security (NCCS)\n4) National Center for Big Data and Cloud Computing (NCBC)\nBIC has been selected in top 5 across the Universities/Institutes of the country to be the part of National Idea Lab."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "what are the exams like?",
+        "What is the exam pattern"
+      ],
+      "responses": [
+        "There are assignments which carry more weight than your written exams. The assignments have deadlines which you should not exceed if you want to get better marks."
+      ]
+    },
+    {
+      "tag": "Internships",
+      "patterns": [
+        "do u offer internships",
+        "internship",
+        "job opportunity"
+      ],
+      "responses": [
+        "This is a selective program that provides the interns with the opportunity to work on a research project with\nNED’s leading faculty and researchers in various engineering research domains as well as social sciences.\nORIC seeks outstanding a`pplications for the Research Internship Program in early start of the semester. The student’s research interests and competencies are matched with the faculty’s research internee need. The program is for\na 100 days long period by the end of which ORIC Research Internship experience certificate is awarded to the accomplished internees as well as the supervisors."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "what are your hours",
+        "when are you guys open",
+        "what your hours of operation"
+      ],
+      "responses": [
+        "You can message us here at any hours. But our college premises will be open from 7:00 am to 5:00 pm only."
+      ]
+    },
+    {
+      "tag": "TransferofCredits",
+      "patterns": [
+        "Transfer of Credits / Exemption\n",
+        "transfer policy"
+      ],
+      "responses": [
+        " i) Transfer of credit/ exemption of courses(s) may be granted by the concerned Chairperson against courses(s) which the student has passed earlier provided that:\na) Application must be submitted before the completion of first semester of studies.\nb) Discontinuation of his/her studies has\nnot exceeded two calendar years.\nc) Such course(s) was (were) not counted towards any other degree.",
+        "Transfer of Credits\nMaximum of four credit courses completed during preceding four semesters from this University, including NED Academy, with at least ‘B’ grade may be credited with transfer of grade(s) as follows;\na) Course(s) listed under the current scheme ofspecialisation\nb) One course from any other specialisation in line with clause 6.2.3(iv), if applicable"
+      ]
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "what facilities are provided by the college?",
+        "what are the facilities of college for students",
+        "what are the college infrastructures "
+      ],
+      "responses": [
+        "With excellent education facilities, Our College provides various other facilities like 24 hours internet, library, classes with AC, discusson room, canteen, parking space, and student service for any students queries.\nWe also provide dorm/hostel facilities to accomodate the international students and students from the outskirts of karachi."
+      ]
+    },
+    {
+      "tag": "Hostel",
+      "patterns": [
+        "hostel",
+        "hostel facilities",
+        "types of hostel"
+      ],
+      "responses": [
+        "(No boarding will be provided by the University; however,canteen facilities are available. Karachi resident are not eligible)\n1. Muhammad Bin Qasim Hostel I & II & Girls Hostel:\n(a) Room Rent\n i) Cubicle Rs.1,035/- per month\nii) Dormitory Rs. 805/- per month\n(b) Service Charges Rs.1,035/- per month\n\n2. International Hostel:\nDormitory Rs.7,000/- per month\n\n3. New Building:\nDormitory Rs.3,000/- per month\n\n4. Hostel Security Deposit (Refundable):\ni) For Locals Rs.5,000/-\nii) For Foreigners Rs.20,000/-\nNB: All hostel charges will be taken in advance on\nsemester basis."
+      ]
+    },
+    {
+      "tag": "fee",
+      "patterns": [
+        "how much is the masters fee",
+        "what is the fee structure",
+        "Fee"
+      ],
+      "responses": [
+        "UNIVERSITY FEES AND DEPOSIT\n The following are the University fees:\n1- Fee Payable at the time of admission to the Programme\n(i) Admission / Re-admission Fee Rs. 5000.00\n(ii) Enrolment fee (alongwith form fee) Rs. 2500.00\n(iii) Security Deposit Rs.10000.00\n(iv) Documents Verification Fee Rs. 3000.00\n2- Fee Payable in each semester\n(i) Tuition & Examination Fee per Course\nEVENING\na) M.Engg. Programme Rs.17000.00\nb) MS Programme Rs.17000.00\nc) MEM Programme Rs.17000.00\nWEEKEND\na) M.Engg. Programme Rs.26000.00\nb) MS Programme Rs.26000.00\nc) MEM Programme Rs.26000.00\n(ii) Library Fee Rs. 1000.00\n(iii) Registration Fee / Semester Rs. 1500.00\n(iv) Internet Fee Rs. 1500.00\n(v) Late Fee, if applicable Rs. 1500.00\n(vi) Equivalence Fee, if applicable Rs. 1500.00\n(vii) University Endowment Fund Rs. 400.00\n(viii) I Grade Examinations Fee Rs.10000.00\n(Per Course), if applicable"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am leaving",
+        "Have a Good Day",
+        "bye",
+        "see ya"
+      ],
+      "responses": [
+        "Have a good day! :)",
+        "Talk you later",
+        "Goodbye"
+      ]
+    },
+    {
+      "tag": "invalid",
+      "patterns": [
+        "",
+        "gvsd",
+        "asbhk"
+      ],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Please contact the Student Affairs department"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "For further inquiries contact the Student Affairs department",
+        "My pleasure"
+      ]
+    }
+  ]
+}
