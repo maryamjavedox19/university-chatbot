@@ -1,4 +1,0 @@
-Recognized: hello
-Recognized: how are you
-Recognized: how you doing
-Recognized: hi hi hello

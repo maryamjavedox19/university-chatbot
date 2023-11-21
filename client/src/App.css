@@ -1,28 +1,47 @@
-.section{
+.section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.main-heading{
+
+.main-heading {
   color: black;
   font-size: 26px;
 }
-.underline{
+
+.underline {
   height: 2px;
   width: 15rem;
   background-color: black;
   margin-top: 10px;
   margin-bottom: 50px;
 }
-.second-heading{
+
+.second-heading {
   color: red;
 }
-.underlines{
+
+.underlines {
   height: 2px;
   width: 60rem;
   background-color: red;
-  margin-top:0;
+  margin-top: 0;
   margin-bottom: 20px;
 }
-.third-heading{
+
+.third-heading {
   color: red;
+}
+
+
+.voiceimg {
+  width: 30px;
+  border-radius: 100%;
+  position: relative;
+  right: 4.4rem
+}
+
+
+.send_button {
+  margin-right: -2rem;
+
 }
