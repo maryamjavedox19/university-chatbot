@@ -5,7 +5,7 @@
 
 
 // export default function Slider() {
-    
+
 //   return (
 //     <div>
 //       <div id="carouselExample" class="carousel slide">
@@ -48,7 +48,7 @@
 //       width: '50%', // Set the width to 100% of the container
 //       height: '50%', // Maintain the aspect ratio
 //     };
-  
+
 //     return (
 //       <div>
 //         <div id="carouselExample" className="carousel slide">
@@ -86,27 +86,54 @@
 //     );
 //   }
 // import "./App.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import React from 'react'
-import "./Myapp.css"
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
+// import React from 'react'
+// import "./Myapp.css"
 
-const Slider = () => {
+// const Slider = () => {
+//   return (
+//     <div>
+//       <Carousel infiniteLoop autoPlay>
+//         <div className="images">
+//           <img src="../images/pic2.png" alt="image1" />
+//         </div>
+//         <div className="images">
+//           <img src="../images/slider1.jpg" alt="image2" />
+//         </div>
+//         <div className="images">
+//           <img src="../images/pic3.jpg" alt="image3" />
+//         </div>
+//       </Carousel>
+//     </div>
+//   )
+// }
+
+// export default Slider
+
+
+
+import React from "react";
+import "./Myapp.css";
+// import ned1 from './images/ned1.jpg'
+
+export default function Slider() {
+  // const handleClick = () => {
+  //   console.log("clicked")
+  // }
   return (
-    <div>
-      <Carousel infiniteLoop autoPlay>
-          <div className="images">
-            <img src="../images/pic2.png" alt="image1" />
-          </div>
-          <div className="images">
-            <img src="../images/slider1.jpg" alt="image2" />
-          </div>
-          <div className="images">
-            <img src="../images/pic3.jpg" alt="image3" />
-          </div>
-        </Carousel>
-    </div>
-  )
-}
+    <div className="images">
+      <img src="../images/nedlogo.jpeg" />
+      <div className="content">
+        <h1>WELCOME</h1>
+        <p>To The</p>
+        <h3>NED UNIVERSITY OF ENGINEERING AND TECHNOLOGY, KARACHI</h3>
 
-export default Slider
+        <div className="button">
+          <button type="button" className="btn btn-primary">Opportunities By HEC</button>
+          <button type="button" className="btn btn-primary">Internships</button>
+        </div>
+      </div>
+    </div>
+  );
+}

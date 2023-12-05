@@ -3,14 +3,52 @@ import Slider from "../inc/Slider";
 import Footer from "./Footer";
 import Chatbot from "./Chatbot";
 
-
 export default function Home() {
   return (
     <div>
-      <Chatbot></Chatbot>
 
+      <Chatbot></Chatbot>
       <Slider />
+
       <section className="section">
+        <div className="text-center">
+          <h1 className="NED-main-heading">Why Choose NED University?</h1>
+          <p style={{ padding: '3rem' }}>
+            NED University is renowned for its rigorous academic programs that
+            prepare students for the challenges of the real world. The
+            curriculum is designed to foster critical thinking, problem-solving
+            skills, and hands-on experience, ensuring that graduates are
+            well-equipped to excel in their careers.
+          </p>
+          <div></div>
+        </div>
+        <div className="containers">
+          <img src="../images/slider2.jpg" className="image" />
+          <div className="text">
+            <h3>Inspiring And Dedicated Faculty:</h3>
+            <p>
+              The faculty members are approachable, readily available for
+              guidance and support, and are known for their mentorship beyond
+              the classroom. They inspire students to aim high, nurturing their
+              talents and guiding them toward their career aspirations.
+            </p>
+          </div>
+        </div>
+        <div className="containers2">
+          <div className="text">
+            <h3>Academics:</h3>
+            <p>
+              The university offers a wide range of undergraduate and
+              postgraduate programs in various engineering and technology
+              disciplines. The emphasis on research and innovation is evident,
+              as students are encouraged to engage in cutting-edge projects that
+              have real-world applications.
+            </p>
+          </div>
+
+          <img src="../images/pic1.jpg" className="image1" />
+        </div>
+
         <div className="container">
           <div className="row ">
             <div className="col-md-12 ">
@@ -91,23 +129,29 @@ export default function Home() {
                       <ol>
                         <li>S.S.C. Certificate</li>
                         <li>H.S.C. Certificate</li>
-                        <li>Marks/Transcript Certificates of qualifying
+                        <li>
+                          Marks/Transcript Certificates of qualifying
                           examination i.e. undergraduate/postgraduate programs
                         </li>
-                        <li> Degree / Provisional Certificate of qualifying
+                        <li>
+                          {" "}
+                          Degree / Provisional Certificate of qualifying
                           examination
                         </li>
                         <li>Computerised National Identity Card</li>
                         <li>Domicile</li>
-                        <li>Registration Certificate of Pakistan Engineering
+                        <li>
+                          Registration Certificate of Pakistan Engineering
                           Council / Pakistan Council of Architects and Town
                           Planners (if applicable)
                         </li>
-                        <li>Migration Certificate (in original) in case of a
+                        <li>
+                          Migration Certificate (in original) in case of a
                           candidate has a degree from a University other than
                           NED University
                         </li>
-                        <li>No Objection Certificate (in original), from the
+                        <li>
+                          No Objection Certificate (in original), from the
                           employer (if the candidate is employed)
                         </li>
                         <li>Two Latest Photographs 1” x 1”</li>
@@ -118,9 +162,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Footer />
         </div>
-      </section>
-    </div>
+      </section >
+
+      <Footer />
+
+    </div >
   );
 }
+
+
